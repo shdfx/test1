@@ -13,7 +13,7 @@ func main() {
 	router := mux.NewRouter()
 	router.HandleFunc("/", func(rw http.ResponseWriter, r *http.Request) {
 		response := map[string]string{
-			"message": "Welcome to Dockerized app",
+			"message": "Welcome to the test app",
 		}
 		json.NewEncoder(rw).Encode(response)
 	})
