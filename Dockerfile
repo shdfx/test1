@@ -26,7 +26,7 @@ ENV APP_NAME sample-dockerize-app
 COPY --from=build-env /$APP_NAME .
 
 # Expose application port
-#EXPOSE 8081
+EXPOSE 8081
 
 # Start app 
 CMD ./$APP_NAME
